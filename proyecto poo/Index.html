@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN1ROj3+A9lfJ5FZmxQn2Zq4HtaIUnM6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/styllesindex.css"> <!-- Vincular el archivo CSS -->  
 </head>
 <body>
-    <a href="Formularios\formulariocategoria.html">Registrar Categoria</a>
-    <br>
-    <a href="Formularios\formulariocliente.html">Registrar Cliente</a><br>
-    <a href="Formularios\formulariocuentasporcobrar.html">Registrar Cuentas Por Cobrar</a><br>
-    <a href="Formularios\formulariofactura.html">Registrar Facturas</a><br>
-    <a href="Formularios\formularioproducto.html">Registrar producto</a><br>
-    <a href="Formularios\formularioproveedor.html">Registrar Proveedor</a><br>
-    <a href="Formularios\formularioroles.html">Registrar Rol</a><br>
-    <a href="Formularios\formulariousuario.html">Registrar Usuario</a><br>
-    <br>
-    <br>
+    <div class="button-container">
+        <div class="button-row">
+            <div class="button-group register-buttons">
+                <a href="Formularios\formulariocategoria.html" class="button-link"><button><i class="fas fa-chart-pie"></i> Registrar Categoria</button></a>
+                <a href="Formularios\formulariocliente.html" class="button-link"><button><i class="fas fa-user"></i> Registrar Cliente</button></a>
+                <a href="Formularios\formulariocuentasporcobrar.html" class="button-link"><button><i class="fas fa-file-invoice-dollar"></i> Registrar Cuentas Por Cobrar</button></a>
+                <a href="Formularios\formulariofactura.html" class="button-link"><button><i class="fas fa-file-alt"></i> Registrar Facturas</button></a>
+                <a href="Formularios\formularioproducto.html" class="button-link"><button><i class="fas fa-shopping-cart"></i> Registrar producto</button></a>
+                <a href="Formularios\formularioproveedor.html" class="button-link"><button><i class="fas fa-truck"></i> Registrar Proveedor</button></a>
+                <a href="Formularios\formularioroles.html" class="button-link"><button><i class="fas fa-user-shield"></i> Registrar Rol</button></a>
+                <a href="Formularios\formulariousuario.html" class="button-link"><button><i class="fas fa-user-plus"></i> Registrar Usuario</button></a>
+            </div>
 
-    <a href="Tablas/consultacate.php">Ver Categorias</a>
-    <a href="Tablas/consultaclientes.php"></a>
+            <div class="button-group view-buttons">
+                <a href="Tablas/consultacate.php" class="button-link"><button><i class="fas fa-list-alt"></i> Ver Categorias</button></a>
+                <a href="Tablas/consultaclientes.php" class="button-link"><button><i class="fas fa-users"></i> Ver Clientes</button></a>
+                <a href="Tablas/consultacuentas.php" class="button-link"><button><i class="fas fa-file-invoice"></i> Ver Cuentas</button></a>
+                <a href="Tablas/consultaprove.php" class="button-link"><button><i class="fas fa-building"></i> Ver Proveedores</button></a>
+                <a href="Tablas/consultarol.php" class="button-link"><button><i class="fas fa-user-tag"></i> Ver Roles</button></a>
+                <a href="Tablas/consultausuario.php" class="button-link"><button><i class="fas fa-user-friends"></i> Ver Usuarios</button></a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
