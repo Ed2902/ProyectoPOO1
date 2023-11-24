@@ -39,11 +39,7 @@
           <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
           <script>
             $(document).ready(function() {
-                $('#myTable').DataTable( {
-                    "processing": true,
-                    "serverSide": true,
-                    "ajax": "../server_side/scripts/server_processing.php"
-                } );
+                $('#myTable').DataTable( );
             } );
             </script>
       </body>

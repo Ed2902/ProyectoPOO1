@@ -1,0 +1,18 @@
+body {
+    background-color: #222;
+    color: #ddd;
+   }
+   
+   table {
+    background-color: #444;
+    color: #fff;
+    border: 3px solid #00f;
+   }
+   
+   th, td {
+    border: 1px solid #00f;
+   }
+   
+   .neon-blue {
+    text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f;
+   }

@@ -10,13 +10,13 @@ body {
     height: 100vh;
 }
 
-/* .button-container {
+ .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center; /* Alinea el texto al centro
 }
- */
+
 
 
 button {
@@ -82,10 +82,7 @@ a:hover {
 
  .register-buttons {
     text-align: left;
-    background-color: black;
     flex-direction: column;
-    
-    
 }
 
 .view-buttons {

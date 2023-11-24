@@ -1,11 +1,11 @@
-  <?php
+<?php
 
-  require_once "../Clases/usuario.php";
-  $usuario = usuario::mostrar();
+  require_once "../clases/HistoricoModificacion.php";
+  $HistoricoModificacion = HistoricoModificacion::mostrar();
 
   ?>
+  
   <html>
-      
       <head>
       <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
       </head>
@@ -16,17 +16,19 @@
             <thead>
             <tr>
                 <th>ID</th>
-                <th>NOMBRE</th>
-                <th>Contrasena</th>
-                <th>ID_RolFK</th>
+                <th>Fecha</th>
+                <th>Detalles</th>
+                <th>ID_ProductoFK</th>
+                <th>ID_UsuarioFK</th>
             </tr>
             </thead>
             <tbody>
-          <?php foreach ($usuario as $item): ?>
-            <th> <?php echo $item['ID_Usuario']; ?> </th>
-            <th><?php echo $item['NombreUsuario']; ?></th>       
-            <th><?php echo $item['Contrasena']?></th>
-            <th><?php echo $item['ID_RolFK']?></th>
+          <?php foreach ($HistoricoModificacion as $item): ?>
+            <th> <?php echo $item['ID_Historico']; ?> </th>
+            <th><?php echo $item['Fecha']; ?></th>       
+            <th><?php echo $item['Detalles']?></th>
+            <th><?php echo $item['ID_ProductoFK']?></th>
+            <th><?php echo $item['ID_UsuarioFK']?></th>
             </th>
           </tr>
           <?php endforeach; ?>
@@ -37,7 +39,7 @@
           <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
           <script>
             $(document).ready(function() {
-                $('#myTable').DataTable( );
+                $('#myTable').DataTable(  );
             } );
             </script>
       </body>
